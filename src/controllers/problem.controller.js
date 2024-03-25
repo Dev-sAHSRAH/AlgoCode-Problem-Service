@@ -5,44 +5,49 @@ const BadRequestError = require('../errors/badRequest.error')
 function pingProblemController(req,res){
     res.json(
         {
-            message: "Ping constroller is up."
+            message: "Ping controller is up."
         }
     )
 }
 
 function addProblem(req,res,next){
     try{
-        throw new BadRequestError('Problem Name',
-        {
-            missing: ["Problem Name"]
-        })
+        throw new NotImplementedError('addProblem');
     }catch(err){
         next(err);
     }
 }
 
 function getProblem(req,res){
-    return res.status(StatusCodes.NOT_IMPLEMENTED).json({
-        message: 'Not Implemented'
-    })
+    try{
+        throw new NotImplementedError('getProblem');
+    }catch(err){
+        next(err);
+    }
 }
 
 function getProblems(req,res){
-    return res.status(StatusCodes.NOT_IMPLEMENTED).json({
-        message: 'Not Implemented'
-    })
+    try{
+        throw new NotImplementedError('getProblems');
+    }catch(err){
+        next(err);
+    }
 }
 
 function updateProblem(req,res){
-    return res.status(StatusCodes.NOT_IMPLEMENTED).json({
-        message: 'Not Implemented'
-    })
+    try{
+        throw new NotImplementedError('updateProblem');
+    }catch(err){
+        next(err);
+    }
 }
 
 function deleteProblem(req,res){
-    return res.status(StatusCodes.NOT_IMPLEMENTED).json({
-        message: 'Not Implemented'
-    })
+    try{
+        throw new NotImplementedError('deleteProblem');
+    }catch(err){
+        next(err);
+    }
 }
 
 module.exports = {
