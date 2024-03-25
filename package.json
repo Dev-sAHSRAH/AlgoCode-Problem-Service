@@ -4,12 +4,14 @@
   "description": "\"This is ans admin sevice for management of problems on AlgoCode Platform\"",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harsha",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.1"
+    "express": "^4.19.1",
+    "nodemon": "^3.1.0"
   }
 }
