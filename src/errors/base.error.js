@@ -3,7 +3,7 @@ class BaseError extends Error {
         super(description);
         this.name = name;
         this.statusCode = statusCode;
-        this.description = details;
+        this.details = details;
     }
 }
 
